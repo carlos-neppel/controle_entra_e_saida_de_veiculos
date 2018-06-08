@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using Controllers.Base;
 using Modelos;
-using Controllers.DAL;
 using System.Linq;
-
+using Controllers.DAL;
 
 namespace Controllers
 {
@@ -14,38 +13,42 @@ namespace Controllers
         
             public void Adicionar(Visitante entity)
             {
-            contexto.Visitantes.Add(entity);
+            contexto.Visitates.Add(entity);
             contexto.SaveChanges();
-
+            
             }
 
             public void Atualizar(Visitante entity)
             {
-                throw new NotImplementedException();
+            contexto.Entry(entity).State =
+            System.Data.Entity.EntityState.Modified;
+            contexto.SaveChanges();
             }
 
             public Visitante BuscarPorID(int id)
             {
-                throw new NotImplementedException();
+            return contexto.Visitates.Find(id);
+            }
+        
+        public void Excluir(int id)
+            {
+            Visitante v = BuscarPorID(id);
+            if(v != null)
+            {
+                contexto.Visitates.Remove(v);
+                contexto.SaveChanges();
+            }
             }
 
-            public void Excluir(int id)
+        public IList<Visitante> ListarPorNome(string nome)
             {
-                throw new NotImplementedException();
-            }
-
-            public IList<Visitante> ListarPorNome(string nome)
-            {
-                throw new NotImplementedException();
+            return contexto.Visitates.
+            Where(v => v.Nome.ToLower() == nome.ToLower()).ToList();
             }
 
             public IList<Visitante> ListarTodos()
             {
-                throw new NotImplementedException();
+            return contexto.Visitates.ToList();
             }
-        }
+ }}
 
-        
-
-    }
-}
