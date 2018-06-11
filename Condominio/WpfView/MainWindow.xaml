@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfView"
+        mc:Ignorable="d"
+        Title="Condominio Morada do Principe - Pagina Inicial " Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="7*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnCadastroMorador" Content="Cadastro Morador" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>
+        <Button x:Name="btnCadastroVisitante" Content="Cadastro Visitante" HorizontalAlignment="Left" Margin="10,55,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>
+        <Button x:Name="btnVisualizarMorador" Content="Visualizar Morador" HorizontalAlignment="Left" Margin="10,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>
+        <Button x:Name="btnVisualizarVisitante" Content="Visualizar Visitante" HorizontalAlignment="Left" Margin="10,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="CONDOMINIO MORADA DO PRINCIPE" VerticalAlignment="Top" Width="487" Height="40"/>
+    </Grid>
+</Window>
