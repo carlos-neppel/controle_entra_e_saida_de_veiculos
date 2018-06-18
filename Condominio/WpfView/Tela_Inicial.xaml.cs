@@ -24,5 +24,12 @@ namespace WpfView
         {
             InitializeComponent();
         }
+
+        private void btnCadastroMorador_Click(object sender, RoutedEventArgs e)
+        {
+            Tela_CadastroMorador cadMor = new Tela_CadastroMorador();
+
+            cadMor.ShowDialog();
+        }
     }
 }

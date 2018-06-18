@@ -16,7 +16,7 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnCadastroMorador" Content="Cadastro Morador" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>
+        <Button x:Name="btnCadastroMorador" Content="Cadastro Morador" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40" Click="btnCadastroMorador_Click"/>
         <Button x:Name="btnCadastroVisitante" Content="Cadastro Visitante" HorizontalAlignment="Left" Margin="10,55,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>
         <Button x:Name="btnVisualizarMorador" Content="Visualizar Morador" HorizontalAlignment="Left" Margin="10,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>
         <Button x:Name="btnVisualizarVisitante" Content="Visualizar Visitante" HorizontalAlignment="Left" Margin="10,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="218" Height="40"/>

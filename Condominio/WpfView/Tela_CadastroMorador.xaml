@@ -5,19 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfView"
         mc:Ignorable="d"
-        Title="Tela_CadastroMorador" Height="450" Width="800">
+        Title="Tela CadastroMorador" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="CONDOMINIO MORADA DO PRINCIPE " VerticalAlignment="Top" Width="772" Height="40"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Cadastro de Morador" VerticalAlignment="Top" Width="180" Height="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="1" TextWrapping="Wrap" Text="este morador esta em Casa" VerticalAlignment="Top"/>
-        <RadioButton x:Name="RdbSim" Content="Sim" HorizontalAlignment="Left" Margin="173,43,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.718,-1.2"/>
-        <RadioButton x:Name="Rdbnao" Content="Nao" HorizontalAlignment="Left" Margin="228,43,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         
+       
+        <Label Content="CONDOMINIO MORADA DOS PRICIPES" HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="CADASTRO MORADOR" HorizontalAlignment="Left" Margin="42,12,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="1.053,-0.308"/>
+        <Label Content="Este Cadastro é :" HorizontalAlignment="Left" Margin="42,43,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.877,-0.692"/>
+        <RadioButton x:Name="RadMorador" Content="Morador" HorizontalAlignment="Left" Margin="144,49,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.376,3.067"/>
+        <Label Content="Placa Do Veiculo : " HorizontalAlignment="Left" Margin="239,43,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPlacaM" HorizontalAlignment="Left" Height="23" Margin="342,46,0,0" Grid.Row="1" TextWrapping="Wrap" Text="  " VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nome Completo : " HorizontalAlignment="Left" Margin="42,74,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox  x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="154,74,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="563"/>
+        <Label Content="Veiculo : " HorizontalAlignment="Left" Margin="467,46,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name= "txtCarroM" HorizontalAlignment="Left" Height="23" Margin="529,46,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188"/>
+        <Label Content="Telefone : " HorizontalAlignment="Left" Margin="42,100,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.702,-0.41" Width="97"/>
+        <TextBox x:Name="txtTelefoneM" HorizontalAlignment="Left" Height="23" Margin="154,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nume Da Residencia : " HorizontalAlignment="Left" Margin="308,102,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.544,-1.128"/>
+        <TextBox x:Name="txtNomeCasa_numM" HorizontalAlignment="Left" Height="23" Margin="441,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+        <Label Content="Este Morador se Encontra em Casa: " HorizontalAlignment="Left" Margin="42,130,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadStatusM_S" Content="Sim" HorizontalAlignment="Left" Margin="246,133,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadStatusM_N" Content="Não" HorizontalAlignment="Left" Margin="290,133,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="BtnSalvar"  Content="Salvar" HorizontalAlignment="Left" Margin="42,177,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="BtnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="210,177,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+
 
     </Grid>
 </Window>

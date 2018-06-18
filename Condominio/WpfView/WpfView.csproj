@@ -64,7 +64,7 @@
     <Compile Include="Tela_CadastroMorador.xaml.cs">
       <DependentUpon>Tela_CadastroMorador.xaml</DependentUpon>
     </Compile>
-    <Page Include="Tela01.xaml">
+    <Page Include="Tela_Inicial.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -72,8 +72,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tela01.xaml.cs">
-      <DependentUpon>Tela01.xaml</DependentUpon>
+    <Compile Include="Tela_Inicial.xaml.cs">
+      <DependentUpon>Tela_Inicial.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Tela_CadastroMorador.xaml">

@@ -42,10 +42,10 @@ namespace Controllers
             }
         }
 
-        public IList<Morador> ListarPorNome(string nome)
-        {
-            return contexto.Moradores.
-                 Where(m => m.Nome.ToLower() == nome.ToLower()).ToList();
+        public IList<Morador> ListarPorNome(string nomem)
+        { 
+            return contexto.Moradores.Where(m => m.NomeM.ToLower() == nomem.ToLower()).ToList();
+                
         }
 
         public IList<Morador> ListarTodos()
