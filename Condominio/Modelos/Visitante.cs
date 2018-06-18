@@ -8,7 +8,8 @@ namespace Modelos
 {
     public class Visitante
     {
-       
+        public String PresencaV { get; set; }
+
         public String PlacaVId { get; set; }
 
         public String CarroV { get; set; }

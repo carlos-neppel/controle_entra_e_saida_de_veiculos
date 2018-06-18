@@ -31,5 +31,11 @@ namespace WpfView
 
             cadMor.ShowDialog();
         }
+
+        private void btnCadastroVisitante_Click(object sender, RoutedEventArgs e)
+        {
+            Tela_CadastroVisitante cadVis = new Tela_CadastroVisitante();
+            cadVis.ShowDialog();
+        }
     }
 }

@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfView.Tela_CadastroVisitante"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfView"
+        mc:Ignorable="d"
+        Title="Tela_CadastroVisitante" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Label Content="CONDOMINIO MORADA DOS PRICIPES" HorizontalAlignment="Left" Margin="72,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="CADASTRO VISITANTE" HorizontalAlignment="Left" Margin="34,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="187"/>
+        <Label Content="Este Cadastro é :" HorizontalAlignment="Left" Margin="34,41,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadVisitante" Content="Visitante" HorizontalAlignment="Left" Margin="136,47,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Placa do Veiculo :" HorizontalAlignment="Left" Margin="206,41,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="2.474,5.346"/>
+        <TextBox x:Name="txtPlacaV" HorizontalAlignment="Left" Height="23" Margin="307,41,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Label Content="Veiculo: " HorizontalAlignment="Left" Margin="432,41,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.079,-0.423"/>
+        <TextBox x:Name="txtCarroV" HorizontalAlignment="Left" Height="23" Margin="486,41,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nome Completo: " HorizontalAlignment="Left" Margin="34,72,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNomeV" HorizontalAlignment="Left" Height="23" Margin="143,72,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="463"/>
+        <Label Content="Telefone: " HorizontalAlignment="Left" Margin="34,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="97"/>
+        <TextBox x:Name="txtTelefoneV" HorizontalAlignment="Left" Height="23" Margin="143,100,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Este Veiculo é Visita do Morador: " HorizontalAlignment="Left" Margin="45,134,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtVisita" HorizontalAlignment="Left" Height="23" Margin="232,134,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnSalvar"  Content="Salvar" HorizontalAlignment="Left" Margin="42,177,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="BtnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="210,177,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
