@@ -15,8 +15,8 @@ namespace Modelos
 
         public String TelefoneM { get; set; }
 
-        public  int  Casa_numM { get; set; }
+        public  String  Casa_numM { get; set; }
         
-        public int StatusM { get; set; }
+        public String StatusM { get; set; }
     }
 }

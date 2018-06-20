@@ -64,6 +64,12 @@
     <Compile Include="Tela_CadastroMorador.xaml.cs">
       <DependentUpon>Tela_CadastroMorador.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tela_Lista_Morador.xaml.cs">
+      <DependentUpon>Tela_Lista_Morador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Lista_Visitante.xaml.cs">
+      <DependentUpon>Tela_Lista_Visitante.xaml</DependentUpon>
+    </Compile>
     <Page Include="Tela_CadastroVisitante.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,6 +90,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Tela_CadastroMorador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tela_Lista_Morador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tela_Lista_Visitante.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,6 +128,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controllers\Controllers.csproj">
+      <Project>{B1C42722-6BC5-477D-B626-FCD28D9EFA75}</Project>
+      <Name>Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelos\Modelos.csproj">
+      <Project>{5FB0B0FB-79FB-419F-B460-02C443017ED6}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

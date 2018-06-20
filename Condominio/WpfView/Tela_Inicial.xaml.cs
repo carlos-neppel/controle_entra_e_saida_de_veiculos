@@ -37,5 +37,11 @@ namespace WpfView
             Tela_CadastroVisitante cadVis = new Tela_CadastroVisitante();
             cadVis.ShowDialog();
         }
+
+        private void btnVisualizarMorador_Click(object sender, RoutedEventArgs e)
+        {
+            Tela_Lista_Morador cadLisM = new Tela_Lista_Morador();
+            cadLisM.ShowDialog();
+        }
     }
 }
