@@ -50,6 +50,10 @@
     <Compile Include="Base\BaseController.cs" />
     <Compile Include="Base\IBaseController.cs" />
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Migrations\201806211417014_criando chave.cs" />
+    <Compile Include="Migrations\201806211417014_criando chave.Designer.cs">
+      <DependentUpon>201806211417014_criando chave.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MoradoresControle.cs" />
     <Compile Include="VisitantesControle.cs" />
@@ -65,6 +69,10 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806211417014_criando chave.resx">
+      <DependentUpon>201806211417014_criando chave.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
