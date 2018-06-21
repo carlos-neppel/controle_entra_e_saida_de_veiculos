@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.ComponentModel.DataAnnotations;
 
 namespace Modelos
 {
@@ -7,6 +7,8 @@ namespace Modelos
     {
 
         public String PresencaM { get; set; }
+
+        [Key]
         public String  PlacaMId { get; set; }
 
         public String  CarroM { get; set; }

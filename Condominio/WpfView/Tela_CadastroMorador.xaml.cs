@@ -25,25 +25,8 @@ namespace WpfView
         {
             InitializeComponent();
         }
-
-        //  radmorador para verificar se o cadastro é de morador 
-        private void RadMorador_Checked(object sender, RoutedEventArgs e)
-        {
-           
-        }
-
-       // para veficar se o morador se encontra em casa
-        private void RadStatusM_S_Checked(object sender, RoutedEventArgs e)
-        {
-            RadStatusM_S.Visibility = Visibility.Hidden;
-        }
-        // para veficar se o morador não  se encontra em casa
-        private void RadStatusM_N_Checked(object sender, RoutedEventArgs e)
-        {
-            RadStatusM_N.Visibility = Visibility.Hidden;
-        }
-
         private void BtnSalvar_Click(object sender, RoutedEventArgs e)
+
         {
             try
             {
@@ -54,19 +37,22 @@ namespace WpfView
 
                 Morador morador = new Morador();
 
+
+                morador.PresencaM = txtPresencaM.Text;
                 morador.PlacaMId = txtPlacaM.Text;
                 morador.CarroM = txtCarroM.Text;
                 morador.NomeM = txtNome.Text;
                 morador.TelefoneM = txtTelefoneM.Text;
                 morador.Casa_numM = txtCasa_numM.Text;
+                morador.StatusM = txttatusM.Text;
 
                 moradoresControle.Adicionar(morador);
                 MessageBox.Show("Cadastro Realizado como sucesso");
 
             }
-                catch
+            catch(Exception ex)
             {
-                //MessageBox.Show("Erro ao Salvar( " + Ex.Message +")");
+                MessageBox.Show("Erro ao Salvar( " + ex.Message +")");
             }
             
 

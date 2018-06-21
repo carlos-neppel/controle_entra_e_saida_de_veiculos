@@ -45,9 +45,9 @@ namespace WpfView
                 visiranteControle.Adicionar(visitante);
                 MessageBox.Show("cadastro realizado com sucesso");
             }
-            catch
+            catch(Exception ex)
             {
-                //MessageBox.Show("erro ao salvar(" + Ex.Messege + ")");
+                MessageBox.Show("erro ao salvar(" + ex.Message + ")");
             }
            
 

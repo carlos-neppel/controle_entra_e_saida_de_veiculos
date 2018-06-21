@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace Modelos
     {
         public String PresencaV { get; set; }
 
+        [Key]
         public String PlacaVId { get; set; }
 
         public String CarroV { get; set; }
