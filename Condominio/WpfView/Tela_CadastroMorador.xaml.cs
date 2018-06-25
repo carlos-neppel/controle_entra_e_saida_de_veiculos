@@ -55,10 +55,6 @@ namespace WpfView
                 MessageBox.Show("Erro ao Salvar( " + ex.Message +")");
             }
             
-
-
-
-
         }
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)

@@ -18,6 +18,12 @@ namespace WpfView
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             MoradoresControle moradoresControle = new MoradoresControle();
+            dgMoradores.ItemsSource = moradoresControle.ListarTodos();
+        }
+        private void dgMoradores_SelectionChanged(object sender, SelectedCellsChangedEventArgs e)
+        {
+            DataGrid dg = ((DataGrid)sender);
+            Morador mor = (Morador)dg.Items[dg.SelectedIndex];
         }
     }
 }
